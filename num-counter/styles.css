@@ -10,6 +10,10 @@ body {
     background-size: cover; */
 }
 
+audio {
+    display: none;
+}
+
 .setBgBlack {
     background-color: black;
 }
