@@ -20,6 +20,8 @@ let count = 0;
 function resetCount(event) {
     count = 0;
     currCount.innerHTML = count;
+    bodyBg.style.backgroundColor = 'black';
+    bodyBg.style.backgroundImage = 'none';
     styledCount(count);
 }
 
