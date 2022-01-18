@@ -16,7 +16,7 @@ reset.addEventListener('click', resetCount);
 
 //FUNCTIONS
 let count = 0;
-let sound = new Audio("/num-counter/audio/_CLICK_ Nice.mp3")
+let sound = new Audio("/audio/_CLICK_ Nice.mp3")
 
 function resetCount(event) {
     count = 0;
