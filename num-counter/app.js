@@ -61,7 +61,7 @@ function revertBg(count) {
 function changeBg(event) {
     console.log('test');
     bodyBg.style.backgroundImage = "url('/images/download.jpg')";
-    bodyBg.style.backgroundSize = 'cover';
+    bodyBg.style.backgroundSize = '100%';
 }
 
 function playAudio(event) {
