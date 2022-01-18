@@ -43,7 +43,7 @@ function styledCount(count) {
     } else if (count === 0) {
         currCount.style.color = "black";
     }
-    if (count === 69) {
+    if (count === 2) {
         changeBg();
         playAudio();
     }
