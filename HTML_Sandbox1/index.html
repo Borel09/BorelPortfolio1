@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="main-header" id="headerMain">
+        <div class="header">
+            <h3>Password Generator</h3>
+        </div>
+    </header>
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a class="active" href="../about.html">About</a></li>                                                              </a></li>
+            <li><a href="../Calculator/calc.html" class="active">Calculator</a></li>
+            <li><a class="active" href="../Password Generator/passGen.html">Generator</a></li>
+        </ul>
+    </div>
+    <hr>
+    <!--Headings = <h1>, <h2>, <h3> etc. -->
+    <h1>Heading with h1 tag</h1>
+    <h2>Heading with h2 tag</h2>
+    <h3>Heading with h3 tag</h3>
+    <h4>Heading with h4 tag</h4>
+    <h5>Heading with h5 tag</h5>
+    <h6>Heading with h6 tag</h6>
+
+    <!-- Paragraphs -->
+    <p>I love Abby</p>
+    <br>
+    <hr>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Fugiat quod quas distinctio eius possimus in porro iure expedita
+        laborum qui officiis obcaecati suscipit, voluptates commodi iste 
+        veniam tempora nemo similique. Quidem quae dolores vero! Voluptates 
+        temporibus quis consequuntur earum blanditiis!
+    </p>
+    <!-- Links -->
+    <p>
+        <a href="https://google.com">Google test link1</a>
+    </p>
+        <!-- target launch=_blank  will launch a new tab -->
+    <a href="https://google.com" target="_blank">Google test link2</a>
+    <hr>
+    <!-- Lists:
+        TWO TYPES: Unordered List(UL) and Ordered Lists (OL)
+        LI: stands for List Item
+    -->
+    <!-- Unordered List Example -->
+    <ul> 
+        <li>List Item One</li>
+        <li>List Item Two</li>
+        <li>List Item Three</li>
+    </ul>
+    <!-- Ordered List Example -->
+    <ol>
+        <li>List Item One</li>
+        <li>List item Two</li>
+        <li>List Item Three</li>
+    </ol>
+    <hr>
+    <!-- TEXT FORMATTING -->
+    <!-- BOLD: <strong>
+        Itallic: <em>
+        Underline: <u>
+        Highlight: <mark>
+        small: <small>
+        Subscript: <sub>
+        Superscript: <sup> -->
+
+    <p>This word is going to be <strong>bold</strong></p>
+    <p>This word is going to be <em>itallicized</em></p>
+    <p>This word is going to be <u>underlined</u></p>
+    <p>This word is going to be <small>small</small></p>
+    <p>This word is going to be <mark>Highlight</mark></p>
+    <p>This word is going to be <sub>Subscript</sub></p>
+    <p>This word is going to be <sup>Superscript</sup></p>
+
+    <hr>
+    <!-- Line breaks add space between elements being dsiplayed in the browser -->
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Omnis quasi rerum ipsam vel magnam expedita beatae tempora atque 
+        delectus architecto?</p>
+    <!-- Lines to seperate content <hr> -->
+    <hr>
+    <p>test after hr tag</p>
+
+    <!-- Grouping Elements <div> -->
+        <div>
+            <h1>This is some text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, hic!</p>
+        </div>
+    <!-- CLASSES AND ID'S: identify a group of elements for multiple purposes -->
+    <hr>
+        <div class="Hello">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nesciunt!</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur quo 
+                nesciunt aliquid repudiandae similique!</p>
+        </div>
+        <hr>
+        <div id="Hello2">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nesciunt!</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur quo 
+                nesciunt aliquid repudiandae similique!</p>
+        </div>
+    <hr>
+    <!-- blog article -->
+    <div class="article">
+        <h3>Super Cool Title</h3>
+        <small>Posted by: myBalls</small>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam delectus illum 
+            aliquam cupiditate officiis beatae incidunt ducimus ut fugiat commodi.
+        </p>
+        <!-- link using # -->
+        <a href="#">Learn More</a>
+    </div>
+    <br>
+    <hr>
+
+    <!-- Tables -->
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Smith</td>
+                <td>123-456-789</td>
+            </tr>    
+            <tr>
+                <td>2</td>
+                <td>Jackson</td>
+                <td>123-555-555</td>
+            </tr> 
+        </tbody>
+    </table>
+
+    <!-- Buttons -->
+    <button>Click Me</button>
+    <button disabled>Disabled</button>
+    <button reset>reset</button>
+    <hr>
+
+    <!-- FORM -->
+    <form>
+        <!-- label for first name -->
+        <label>First Name</label>
+        <br>
+        <!-- intput box for first name with placeholder -->
+        <input type="text" placeholder="Enter First Name">
+        <br>
+        <br>
+        <!-- label for email -->
+        <label for="Email">Email</label>
+        <br>
+        <!-- input box for email -->
+        <input type="email" required placeholder="xx23@example.com">
+        <br>
+        <br>
+    
+        <!-- form select list -->
+        <!-- select dropdown box with different option inside
+            top option is the default option that appears -->
+        <select>
+            <option value=""disabled selected>--Select--</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+        </select>
+        <br>
+        <br>
+        <label for="Message">Message</label>
+        <br>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <br>
+
+    <!-- images -->
+    <img src="https://adultpaintbynumber.com/wp-content/uploads/2020/08/japan-autumn-season-paint-by-number-510x407.jpg" 
+    alt="Japan Mountain">
+
+    <!-- creating a NavBar -->
+    <nav>
+        <ul>
+            <li><a href="documents.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <h1>HTML STRUCTURE</h1>
+    <a href="https://notesformsc.org/html-layout/" target="_blank">
+        <img src="https://notesformsc.org/wp-content/uploads/2019/09/HTML5-Layout.png" alt="html-layout example" height="500" width="500">
+    </a>
+
+    <div style="margin-bottom: 500px;"></div>
+</body>
+</html>

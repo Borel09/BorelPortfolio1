@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background: #F6F6F6;
+  padding-bottom: 30px;
+}
+
+.container{
+  font-weight: bold;
+  border: 2px solid black;
+  padding-bottom: 100%;
+}
+
+.Calculator{
+  max-width: 400px;
+  margin: 0  auto;
+  border: 2px solid #111;
+  border-radius: 25px;
+  background-color: #000000;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
+
+
+.display{
+  margin: 0 auto;
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  color: #e3e3e3;
+  text-align: right;
+  font-size: 45px;
+  border-bottom: 2px solid #111;
+  border-color: black;
+  background-color: black;
+  /* background-color: #000000; */
+  border-radius: 25px ;
+}
+
+
+
+
+button{
+  background: #ebebeb; /* light background with opacity 50% */
+  border: 1px solid #111; /* black border */
+  padding: 20px;
+  color: #333333; /* white text */
+  border-radius: 25px; /* rounded corners */
+  font-size: 40px; /* larger fonts */
+  cursor: pointer; /* make it look clickable */
+}
+
+.controls{
+  padding: 20px;
+  display: grid;
+  /* creates 4 columns of buttons */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*LONG VERSION OF WHATS BENEATH*/
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+
+.dbl-zero{
+  grid-column: span 2;
+}
+
+.greyclr-btn{
+  background-color: #9f9f9f;
+}
+
+.yellow-btn{
+  background-color: #f69906;
+}
+
+button:hover{
+  background-color: #D4D4D2;
+}
+
+.yellow-btn:hover{
+  background-color: #ffb340;
+}
