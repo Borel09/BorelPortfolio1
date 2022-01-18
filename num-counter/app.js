@@ -4,7 +4,7 @@ const decrease = document.querySelector('.decrease');
 const reset = document.querySelector('.reset');
 const currCount = document.querySelector('span');
 const bodyBg = document.getElementById('bg-change')
-    //const audio = document.getElementById('audio');
+const audio = document.getElementById('audio');
 
 
 
@@ -16,7 +16,7 @@ reset.addEventListener('click', resetCount);
 
 //FUNCTIONS
 let count = 0;
-let sound = new Audio("/audio/_CLICK_ Nice.mp3")
+//let sound = new Audio("/audio/_CLICK_ Nice.mp3")
 
 function resetCount(event) {
     count = 0;
@@ -68,6 +68,6 @@ function changeBg(event) {
 }
 
 function playAudio(event) {
-    //audio.play();
-    sound.play();
+    audio.play();
+    //sound.play();
 }
