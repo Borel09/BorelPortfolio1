@@ -5,11 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    /* display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center; */
+    font-family: 'Roboto', sans-serif
 }
 
 
@@ -41,7 +37,7 @@ body {
     border-radius: 25px;
     padding: 2px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .list a:hover {
@@ -54,18 +50,26 @@ body {
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: auto;
     width: 50%;
     height: 100%;
     margin-top: 50px;
-    /* padding: 15px; */
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
-@media screen and (max-width: 100px) {
-    .header {
-        width: 70%;
+@media screen and (min-width: 501px) {
+    div.header {
+        font-size: 35px;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.header {
+        font-size: 25px;
+        width: fit-content;
     }
 }
 
@@ -76,9 +80,6 @@ body {
 }
 
 .header {
-    /* font-size: 30px; */
-    font-size: 16px;
-    font-size: 2.15vw;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -86,9 +87,12 @@ body {
     align-items: center;
     border: none;
     width: 50%;
-    height: 75px;
+    margin: auto;
+    min-height: 75px;
     border-radius: 25px;
     background-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .btn {
