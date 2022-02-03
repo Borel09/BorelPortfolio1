@@ -212,7 +212,7 @@ function dateMaker() {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday",
         "Thursday", "Friday", "Saturday"
     ];
-    let months = ["Jan", "Feby", "March", "April", "May",
+    let months = ["Jan", "Feb", "March", "April", "May",
         "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"
     ];
 
