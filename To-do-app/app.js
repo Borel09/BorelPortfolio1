@@ -116,7 +116,7 @@ function clearTodos(e) {
 }
 
 function clearLocalStorage(item) {
-    let localArr
+    let localArr;
     if (localStorage.getItem('localArr') === null) {
         localArr = [];
     } else {
