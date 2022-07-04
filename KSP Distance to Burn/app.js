@@ -8,11 +8,13 @@ const submit = document.getElementById("submitMath");
 const addBtn = document.querySelector('.submitBtn')
 const resultsCont = document.getElementById("RC");
 const headerDate = document.getElementById("date");
+const clearStorage = document.getElementById('clearStorage');
 
 //EVENT LISTENERS
 window.addEventListener('load', dateMaker);
 submit.addEventListener('click', checkInput);
-addBtn.addEventListener("keypress", pressEnter);
+//addBtn.addEventListener("keypress", pressEnter);
+clearStorage.addEventListener('click', clear)
 
 //FUNCTIONS
 function pressEnter(event) {
@@ -35,6 +37,7 @@ function checkInput() {
 function addResults(event) {
     const testBox = document.createElement('div');
     testBox.classList.add('holdME')
+    testBox.id = "resultsID";
     resultsCont.appendChild(testBox);
 
 
@@ -58,9 +61,10 @@ function distanceToBurn() {
     let surfaceDistance = (shipV * burnT) / 2;
     let pythag = Math.pow(surfaceDistance, 2) + Math.pow(trueAlt, 2);
     let result = (Math.sqrt(pythag) / 1000).toFixed(2);
+    let finalResult = result + "Km";
 
     //console.log(typeof result);
-    return result.toString();
+    return finalResult;
 }
 
 
@@ -70,9 +74,17 @@ function altitudeFromTarget(shipAltitude, targetAltitude) {
 }
 
 
+function clear(e) {
+    const item = e.target;
+    if (item.id == 'clearStorage') {
+        document.getElementById("resultsID").innerHTML = "";
+        document.getElementById("shipV").value = "";
+        document.getElementById("burnT").value = "";
+        document.getElementById("shipA").value = "";
+        document.getElementById("targetA").value = "";
+    }
 
-
-
+}
 
 
 // DATE FUNCTION THAT RUNS ON PAGE LOAD
