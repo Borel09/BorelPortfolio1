@@ -33,6 +33,15 @@ function checkInput() {
         addResults();
     }
 }
+var myEle = document.getElementById('results');
+
+// function holdMeCheck() {
+//     if (typeof(myEle) != 'undefined' && myEle != null) {
+//         alert("Please Clear Current Result");
+//     } else {
+//         addResults();
+//     }
+// }
 
 function addResults(event) {
     const testBox = document.createElement('div');
