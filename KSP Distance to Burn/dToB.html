@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KSP Distance to Burn Calculator</title>
+</head>
+
+<body>
+    <div id="nav">
+        <ul class="nav-ul">
+            <img class="logoImg" src="/To-do-app/images/RB-logo.png">
+            <li class="navBtn"><a href="/index.html">Home</a></li>
+            <li class="navBtn"><a href="/Password Generator/passGen.html">Password Generator</a></li>
+            <li class="navBtn"><a href="/Calculator/calc.html">Calculator</a></li>
+            <li class="navBtn"><a href="/FCC-tribute page/tribute.html">Tribute Page</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="welcome">KSP Distance to Burn Calculator</div>
+            <!-- <div class="clear">
+                <button class="material-icons" id="clearStorage">refresh</button>
+            </div> -->
+            <div id="date">Date</div>
+        </div>
+
+        <div class="content">
+            <div id="form">
+                <form>
+                    <!-- label for first variable -->
+                    <label class="label" id="shipVelLabel">Ship Velocity:</label>
+                    <br>
+                    <!-- input box for first var -->
+                    <input type="text" placeholder="Enter Ship Velocity" class="entryBox" id="shipV">
+                    <br>
+
+
+                    <!-- label for burn time -->
+                    <label class="label" id="burnTime">Burn Time:</label>
+                    <br>
+                    <!-- input box for burn time -->
+                    <input type="text" placeholder="Enter Burn Time" class="entryBox" id="burnT">
+                    <br>
+
+
+                    <!-- label for ship altitude -->
+                    <label class="label" id="shipAltitude">Ship Altitude:</label>
+                    <br>
+                    <!-- input box for ship altitude -->
+                    <input type="text" placeholder="Enter Ship Altitude" class="entryBox" id="shipA">
+                    <br>
+
+
+                    <!-- label for target altitude -->
+                    <label class="label" id="targetAltitude">Target Altitude:</label>
+                    <br>
+                    <input type="text" placeholder="Enter Target Altitude" class="entryBox" id="targetA">
+                    <br>
+                </form>
+            </div>
+            <div class="resultContainer" id="RC">
+                <div class="btnContainer">
+                    <button class="submitBtn" id="submitMath">Submit</button>
+                </div>
+                <br>
+                <div class="resultLabel">Results: </div>
+                <br>
+                <!-- <div class="results" id="end">endpath</div> -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
